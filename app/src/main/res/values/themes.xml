@@ -13,4 +13,18 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ScoreButton" parent="Widget.AppCompat.ActionButton">
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="PlusButton" parent="ScoreButton">
+        <item name="android:src">@drawable/ic_plus</item>
+        <item name="android:contentDescription">@string/plus_button</item>
+    </style>
+
+    <style name="MinusButtons" parent="ScoreButton">
+        <item name="android:src">@drawable/ic_minus</item>
+        <item name="android:contentDescription">@string/minus_button</item>
+    </style>
 </resources>
