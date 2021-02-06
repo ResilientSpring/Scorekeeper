@@ -2,7 +2,5 @@
     <string name="app_name">Scorekeeper</string>
     <string name="minus_button">Minus Button</string>
     <string name="plus_button">Plus Button</string>
-    <string name="minus_button">Minus Button</string>
-    <string name="plus_button">Plus Button</string>
     <string name="initial_count">0</string>
 </resources>

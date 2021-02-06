@@ -9,8 +9,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     // Member variables for holding the score.
-    private int mScore1;
-    private int mScore2;
+    private int mScore1 = 0;
+    private int mScore2 = 0;
 
     // Member variables for holding the score
     private TextView mScoreText1;
@@ -49,6 +49,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void increaseScore(View view) {
+
+        int viewID = view.getId();
+        switch (viewID){
+
+            case R.id.increaseTeam1:
+                mScore1++;
+                mScoreText1.setText(String.valueOf(mScore1));
+                break;
+            case R.id.increaseTeam2:
+                mScore2++;
+                mScoreText2.setText(String.valueOf(mScore2));
+        }
 
 
     }
